@@ -31,7 +31,7 @@ cd trt_pose
 sudo python3 setup.py install
 ```
 
-### Step 3 - Run the example notebook
+### Step 3 - Run the inference code
 
 We provide a couple of human pose estimation models pre-trained on the MSCOCO dataset.  The throughput in FPS is shown for each platform
 
@@ -46,20 +46,7 @@ To run the live Jupyter Notebook demo on real-time camera input, follow these st
 
 2. Place the downloaded weights in the [tasks/human_pose](tasks/human_pose) directory
 
-3. Open and follow the [live_demo.ipynb](tasks/human_pose/live_demo.ipynb) notebook
+3. To convert Torch to TensorRT use livedemo.ipynb notebook
 
-    > You may need to modify the notebook, depending on which model you use
+3. Open and follow the [live_demo.ipynb](tasks/human_pose/inference.py) python file
 
-## See also
-
-- [torch2trt](http://github.com/NVIDIA-AI-IOT/torch2trt) - An easy to use PyTorch to TensorRT converter
-
-- [JetBot](http://github.com/NVIDIA-AI-IOT/jetbot) - An educational AI robot based on NVIDIA Jetson Nano
-- [JetRacer](http://github.com/NVIDIA-AI-IOT/jetracer) - An educational AI racecar using NVIDIA Jetson Nano
-- [JetCam](http://github.com/NVIDIA-AI-IOT/jetcam) - An easy to use Python camera interface for NVIDIA Jetson
-
-## References
-
-Cao, Zhe, et al. "Realtime multi-person 2d pose estimation using part affinity fields." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2017.
-
-Xiao, Bin, Haiping Wu, and Yichen Wei. "Simple baselines for human pose estimation and tracking." Proceedings of the European Conference on Computer Vision (ECCV). 2018.
